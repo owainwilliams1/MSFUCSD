@@ -2,12 +2,12 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-
 import { benefitOne } from "../components/data";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
+import { WavyBackground } from "../components/wavy-background";
 
 const Home = () => {
   return (
@@ -35,8 +35,10 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-      <Hero />
+      <WavyBackground waveWidth="20" waveOpacity="0.2">
+        <Navbar />
+        <Hero />
+      </WavyBackground>
       <Benefits data={benefitOne} />
       <SectionTitle
         pretitle="Testimonials"
