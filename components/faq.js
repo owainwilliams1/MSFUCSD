@@ -35,22 +35,19 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "What events do you hold?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "We hold advocacy campaigns, screen films, hold fundraising efforts, teach life saving skills used by MSF doctors abroad, collaberate with other organizations, and hold seminars from mentors and MSF volunteers.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Do I have to be on a pre-med track to join?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Absolutely not! There are no required qualifications to join. Our club draws in talent from all majors; all contributing to different aspects of the same noble cause.",
+  },
+  {
+    question: "What actually is Doctors Without Borders?",
+    answer:
+      "Doctors Without Borders is a non profit, non-governmental organization which has created a medical movement of more than 30,000 doctors, nurses, logisticians and administrators which aims to treat patents in some of the most remote and dangerous places in the world. Doctors Without Borders has medical teams in over 70 countries, saving the lives of those threatened by violence, disease, malnutrition, exclusion from healthcare, and catastrophic events every single day. They also fight for better care and access to affordable vaccines and drugs.",
   },
 ];
 

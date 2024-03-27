@@ -8,6 +8,8 @@ import benefitOneImg from "../public/img/benefit-one.png";
 
 const benefitOne = {
   title: "Why join us?",
+  quote: `"The places where others are not going-that's where we want to be"`,
+  citation: 'MSF',
   desc: "Joining Doctors Without Borders comes with great benefits, not only for medial students, but for everyone at UCSD.",
   image: benefitOneImg,
   bullets: [

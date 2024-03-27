@@ -7,7 +7,6 @@ import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
-import { WavyBackground } from "../components/wavy-background";
 
 const Home = () => {
   return (
@@ -35,24 +34,26 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <WavyBackground waveWidth="20" waveOpacity="0.2">
-        <Navbar />
-        <Hero />
-      </WavyBackground>
-      <Benefits data={benefitOne} />
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
+      <Navbar />
+      <Hero />
+      <div id="why">
+        <Benefits data={benefitOne} />
+      </div>
+      <div id="testimonials">
+        <SectionTitle
+          pretitle="Testimonials"
+          title="Here's what our members have said"
+        />
+        <Testimonials />
+      </div>
+      <div id="faq">
+        <SectionTitle
+          id="faq"
+          pretitle="FAQ"
+          title="Frequently Asked Questions"
+        />
+        <Faq />
+      </div>
       <Footer />
     </>
   );
