@@ -3,15 +3,16 @@ import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { useState } from "react";
+import logo128 from "../public/img/logo.svg";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const navigation = [
-    { name: "Home", link: "/" },
-    { name: "Why", link: "/#why" },
-    { name: "Testimonials", link: "/#testimonials" },
-    { name: "FAQ", link: "/#faq" },
-    { name: "Join", link: "/#join" },
+    { name: "Home", link: "#" },
+    { name: "Why", link: "#why" },
+    { name: "Testimonials", link: "#testimonials" },
+    { name: "FAQ", link: "#faq" },
+    { name: "Join", link: "mailto:msfchapter@ucsd.edu" },
   ];
 
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-msfRed dark:text-gray-100">
                     <span>
                       <Image
-                        src="/img/logo.svg"
+                        src={logo128}
                         alt="N"
                         width="32"
                         height="32"

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Container from "./container";
-import heroImg from "../public/img/logo.svg";
 import { Button } from "./moving-border";
 import Quote from "./quote";
+import logo512 from "../public/img/logo.svg";
 
 const Hero = () => {
   return (
@@ -24,13 +24,17 @@ const Hero = () => {
 
             <div className="flex flex-row justify-between lg:justify-normal items-start w-full gap-2">
               <Button className="bg-white dark:bg-trueGray-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 rounded-md">
-                <a href="#" target="_blank" rel="noopener">
+                <a
+                  href="mailto:msfchapter@ucsd.edu"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Join Now!
                 </a>
               </Button>
               <button className="border-neutral-200 dark:border-slate-800 border rounded-md h-16 w-40 p-[1px] text-sm antialiased">
                 <a
-                  href="https://donate.doctorswithoutborders.org/secure/give-monthly-double-your-impact-search-onetime-reverse"
+                  href="https://donate.doctorswithoutborders.org/secure/give-monthly-double-your-impact-search-onetime-reverse?ms=ADD2308U0U52&utm_source=google&utm_medium=cpc&utm_campaign=BRAND.DWB_CKMSF-BRAND.DWB-GS-STLK-ALL-VAR-BO-ALL-STLK-DONATETEST-MONTHLY&gclid=CjwKCAjw5ImwBhBtEiwAFHDZx5muKYg4qDk0atK44PpqMEkxW-THac4QnYrOAeTn6o1Y5-50o-MTYRoCcGQQAvD_BwE"
                   target="_blank"
                 >
                   Donate
@@ -47,7 +51,7 @@ const Hero = () => {
         <div className="hidden items-center justify-center w-full lg:w-1/2 lg:flex">
           <div className="flex items-center justify-center w-full">
             <Image
-              src={heroImg}
+              src={logo512}
               width="616"
               height="617"
               className={"object-cover"}

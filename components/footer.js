@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import logo128 from "../public/img/logo.svg";
 
 export default function Footer() {
   return (
@@ -16,7 +17,7 @@ export default function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-msfRed dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src={logo128}
                   alt="N"
                   width="32"
                   height="32"
@@ -32,34 +33,38 @@ export default function Footer() {
           </div>
 
           <div className="">
-            <div>Follow us</div>
+            <div>Contact us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/web3templates"
+                href="mailto:msfchapter@ucsd.edu"
                 target="_blank"
                 rel="noopener"
               >
-                <span className="sr-only">Twitter</span>
-                <Discord />
-              </a>
-              <a
-                href="https://facebook.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Facebook</span>
+                <span className="sr-only">Email</span>
                 <Email />
               </a>
               <a
-                href="https://instagram.com/web3templates"
+                href="https://discord.gg/dXFgxG4G"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="sr-only">Discord</span>
+                <Discord />
+              </a>
+              <a
+                href="https://www.instagram.com/friendsofmsf.ucsd/"
                 target="_blank"
                 rel="noopener"
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
-                <span className="sr-only">Linkedin</span>
+              <a
+                href="https://donate.doctorswithoutborders.org/secure/give-monthly-double-your-impact-search-onetime-reverse?ms=ADD2308U0U52&utm_source=google&utm_medium=cpc&utm_campaign=BRAND.DWB_CKMSF-BRAND.DWB-GS-STLK-ALL-VAR-BO-ALL-STLK-DONATETEST-MONTHLY&gclid=CjwKCAjw5ImwBhBtEiwAFHDZx5muKYg4qDk0atK44PpqMEkxW-THac4QnYrOAeTn6o1Y5-50o-MTYRoCcGQQAvD_BwE"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="sr-only">Donate</span>
                 <Donate />
               </a>
             </div>

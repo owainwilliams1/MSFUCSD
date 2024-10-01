@@ -7,6 +7,7 @@ import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
+import logo512 from "../public/img/logo.svg";
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
           content="msf, dwb, doctors, borders, doctors without borders, chapter, ucsd, club"
         />
         <meta name="author" content="Owain Williams" />
-        <meta property="og:image" content="icon-512x512.png" />
+        <meta property="og:image" content={logo512} />
         <meta
           property="og:description"
           content="Doctors without borders chapter at UCSD."

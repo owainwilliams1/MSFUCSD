@@ -13,13 +13,13 @@ const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              I was very interested in global health and the <Mark>values</Mark>{" "}
+              of MSF, so I joined the Doctors Without Borders chapter at UC San
+              Diego!
             </p>
-
             <Avatar
               image={danielle}
-              name="Sarah Steiner"
+              name="Danielle Betts"
               title="Outreach Committee"
             />
           </div>
@@ -27,10 +27,9 @@ const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              We are guided by our universal medical ethics. We are
+              <Mark>committed</Mark> to bearing witness.
             </p>
-
             <Avatar
               image={taylor}
               name="Taylor Phillips"
@@ -41,8 +40,10 @@ const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+              MSF provides education and raises awareness on global issues. I
+              can make a meaningful impact locally while spreading a
+              <Mark>global</Mark>
+              perspective.
             </p>
 
             <Avatar
